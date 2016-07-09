@@ -1,0 +1,13 @@
+<h1 class="container text-center">Employes</h1>
+
+<ul class="list-group">
+	<li class="list-group-item" ng-repeat="Employe in Employes">
+		<h4>username: <a href="/#employes/{{ Employe.id}}"> {{Employe.username | uppercase}}</a></h4>
+         <p>id:{{Employe.id}}</p>
+         <p>phone:{{Employe.phone}} </p>
+         <p>email:{{Employe.email}}</p>
+         <P>adress:{{Employe.address}}</p>
+        <a href="#/Employes/{{employee.id/edit}}" class="btn btn-warning">EditBook</a>
+        <button ng-click="deletebook()" class="btn btn-danger">Delete Book</button>
+	</li>
+</ul>
